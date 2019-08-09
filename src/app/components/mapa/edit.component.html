@@ -1,0 +1,11 @@
+<form [formGroup]="formulario">
+  <mat-form-field>
+    <input matInput placeholder="Titulo" formControlName="titulo">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea cols="3" matInput placeholder="Comentario" formControlName="descripcion"></textarea>
+  </mat-form-field>
+  <button mat-raised-button (click)="cancelar()" type="button" color="warn">Cancelar</button>
+  <button mat-raised-button (click)= "modificar()" color="primary">Modificar</button>
+</form>
